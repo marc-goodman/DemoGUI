@@ -8,6 +8,7 @@ import static javax.swing.SwingUtilities.invokeLater;
  * This is the root class that controls all the separate GUIs.
  */
 
+// My Main class
 public class Main {
     private static JFrame mFrame = null;
     private static String mEmail = "";
