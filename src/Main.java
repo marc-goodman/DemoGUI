@@ -4,6 +4,8 @@ import static javax.swing.SwingUtilities.invokeLater;
 
 /**
  * Created by SYTC307u8365 on 10/5/2017.
+ *
+ * This is the root class that controls all the separate GUIs.
  */
 // import javax.swing.*;
 
