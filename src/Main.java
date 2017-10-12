@@ -9,7 +9,7 @@ import static javax.swing.SwingUtilities.invokeLater;
  */
 
 // My Main class
-public class Main {
+class Main {
     private static JFrame mFrame = null;
     private static String mEmail = "";
     private static String mPassword = "";
