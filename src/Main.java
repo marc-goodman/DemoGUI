@@ -36,7 +36,7 @@ public class Main {
 
     public static void showUserTakingTest() {
         mFrame.getContentPane().removeAll();
-        mFrame.getContentPane().add(new UserTakingTestForm().getRootPanel());
+        mFrame.getContentPane().add(new FinalForm().getRootPanel());
         mFrame.pack();
         mFrame.setLocationRelativeTo(null);
         mFrame.setVisible(true);
