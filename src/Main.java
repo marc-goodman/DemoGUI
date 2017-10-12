@@ -3,9 +3,8 @@ import javax.swing.*;
 import static javax.swing.SwingUtilities.invokeLater;
 
 /**
- * Created by SYTC307u8365 on 10/5/2017.
+ * Created by Marc Goodman on 10/5/2017.
  */
-// import javax.swing.*;
 
 public class Main {
     private static JFrame mFrame = null;
