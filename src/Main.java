@@ -3,11 +3,10 @@ import javax.swing.*;
 import static javax.swing.SwingUtilities.invokeLater;
 
 /**
- * Created by SYTC307u8365 on 10/5/2017.
+ * Created by Marc Goodman on 10/5/2017.
  *
  * This is the root class that controls all the separate GUIs.
  */
-// import javax.swing.*;
 
 public class Main {
     private static JFrame mFrame = null;
@@ -38,7 +37,7 @@ public class Main {
 
     public static void showUserTakingTest() {
         mFrame.getContentPane().removeAll();
-        mFrame.getContentPane().add(new UserTakingTestForm().getRootPanel());
+        mFrame.getContentPane().add(new FinalForm().getRootPanel());
         mFrame.pack();
         mFrame.setLocationRelativeTo(null);
         mFrame.setVisible(true);
