@@ -9,6 +9,7 @@ import static javax.swing.SwingUtilities.invokeLater;
  */
 
 // My Main class
+// Another comment
 class Main {
     private static JFrame mFrame = null;
     private static String mEmail = "";
