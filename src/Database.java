@@ -22,13 +22,13 @@ public class Database {
 
     public User lookupUser(String email) {
         connect();
-        String query = "SELECT Email, Password, Role FROM USERS WHERE Email = ?";
+        String query = "SELECT UserID, Email, Password, Role FROM USERS WHERE Email = ?";
         try {
             PreparedStatement stmt = mConnection.prepareStatement(query);
             stmt.setString(1, email);
             ResultSet rs = stmt.executeQuery();
             if(rs.next()) {
-                return new User(rs.getString("Email"), rs.getString("Password"), rs.getString("role"));
+                return new User(rs.getInt("UserID"), rs.getString("Email"), rs.getString("Password"), rs.getString("role"));
             }
             return null;
         } catch (SQLException e) {

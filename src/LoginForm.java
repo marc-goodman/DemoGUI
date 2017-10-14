@@ -28,9 +28,9 @@ class LoginForm {
                 System.out.println("User not found, need an error dialog.");
                 return;
             }
-            System.out.println("Email: " + user.getEmail() + ", Password: " + user.getPassword() + ", Role: " + user.getRole());
+            System.out.println("ID: " + user.getUserID() + ", Email: " + user.getEmail() + ", Password: " + user.getPassword() + ", Role: " + user.getRole());
             if(user.getPassword().equals(pwd)) {
-                System.out.println("User logged in successfully.");
+                System.out.println("User " + user.getUserID() + " logged in successfully.");
                 Main.setEmail(emailTextField.getText());
                 Main.setPassword(passwordTextField.getText());
                 Main.login();

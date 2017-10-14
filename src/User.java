@@ -1,12 +1,18 @@
 public class User {
+    private int mUserID;
     private String mEmail;
     private String mPassword;
     private String mRole;
 
-    public User(String email, String password, String role) {
+    public User(int userID, String email, String password, String role) {
+        mUserID = userID;
         mEmail = email;
         mPassword = password;
         mRole = role;
+    }
+
+    public int getUserID() {
+        return mUserID;
     }
 
     public String getEmail() {
